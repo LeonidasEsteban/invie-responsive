@@ -444,7 +444,7 @@ input:focus, textarea:focus {
     margin: 0;
   }
   input[type="text"] {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   input[type="text"],
