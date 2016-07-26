@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invie - tus mejores guitarras!!</title>
+    <meta charset="utf-8"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/invie.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  </head>
+  <body>
+    <section id="portada" class="InvieHero"> <!-- portada -->
+      <header id="header" class="InvieHero-header u-wrapper"> <!-- header -->
+        <figure class="InvieHero-logo"> <!-- logotipo -->
+          <img src="images/invie.png" srcset="images/invie.png 1x, images/invie2x.png 2x" width="186" height="60" alt="Invie logotipo"/>
+        </figure>
+        <span class="InvieHero-btn icon-menu" id="burguer-button"></span>
+        <nav class="InvieHero-navbar" id="menu"> <!-- menu -->
+          <ul class="InvieHero-menu">
+            <li class="InvieHero-menu-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="InvieHero-menu-item">
+              <a href="#guitarras">Guitarras</a>
+            </li>
+            <li class="InvieHero-menu-item">
+              <a href="precios.html">Precios</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="InvieHero-copy u-wrapper">
+        <h1 class="InvieHero-copy-title">Guitarras <span>invie</span>sibles</h1><!-- titulo -->
+        <h3 class="InvieHero-copy-subtitle">Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
+        <a class="InvieHero-copy-btn" href="#guitarras">Conoce mas</a><!-- boton -->
+      </div>
+    </section>
+    <section id="InvieGuitars u-wrapper" class="guitarras contenedor"> <!-- guitarras -->
+      <h2 class="InvieGuitars-title u-wrapper">Nuestra guitarras</h2><!-- titulo -->
+      <div class="u-scrollContainer u-wrapper">
+
+        <article class="u-scrollContainer-itemContainer"> <!-- guitarra 1 -->
+          <div class="u-scrollContainer-itemContent">
+            <img class="InvieGuitars-item-img" data-src="images/invie-acustica.png|images/invie-acustica2x.png"  alt="Guitarra Invie Acustica" width="350"/>
+            <div class="InvieGuitars-item-container">
+              <h3 class="InvieGuitars-item-title">Invie Acustica</h3>
+              <ol class="InvieGuitars-item-list">
+                <li>Estilo vintage</li>
+                <li>Madera pura</li>
+                <li>Incluye estuche invisible de aluminio</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <article class="u-scrollContainer-itemContainer"> <!-- guitarra 2 -->
+          <div class="u-scrollContainer-itemContent">
+            <img class="InvieGuitars-item-img" data-src="images/invie-classic.png|images/invie-classic2x.png" alt="Guitarra Invie Classic" width="350"/>
+            <div class="InvieGuitars-item-container">
+              <h3 class="InvieGuitars-item-title">Invie Classic</h3>
+              <ol class="InvieGuitars-item-list">
+                <li>Estilo vintage</li>
+                <li>Liviana</li>
+                <li>Inicia tu camino como Rockstar</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="u-Grid">
+        <div class="u-Grid-column"><p>Col 1</p></div>
+        <div class="u-Grid-column"><p>Col 2</p></div>
+        <div class="u-Grid-column"><p>Col 3</p></div>
+        <div class="u-Grid-column"><p>Col 4</p></div>
+        <div class="u-Grid-column"><p>Col 5</p></div>
+      </div>
+
+    </section>
+    <footer class="InvieFooter">
+      <div class="InvieFooter-container u-wrapper">
+        <div class="InvieFooter-contact">
+          <img class="InvieFooter-logo" data-src="images/invie-white.png|images/invie-white2x.png" alt="logotipo blanco"/>
+          <a class="InvieFooter-link" href="tel:+573024456678"><strong>Telefono</strong> <span>3024456678</span></a>
+          <a class="InvieFooter-link" href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+        </div>
+        <form class="InvieFooter-form">
+          <div class="InvieFooter-form-column">
+            <label class="InvieFooter-from-label" for="nombre">Nombre</label>
+            <input class="InvieFooter-form-input InvieFooter-form-input--text" type="text" required id="nombre" name="nombre"/>
+            <label class="InvieFooter-from-label" for="email">E-mail</label>
+            <input class="InvieFooter-form-input InvieFooter-form-input--text" type="email" required id="email" name="email"/>
+            <div class="sexo">
+              <label class="InvieFooter-form-label" for="mujer">
+                <input class="InvieFooter-form-input InvieFooter-form-input--radio" type="radio" id="mujer" checked name="sexo" value="mujer"> mujer
+              </label>
+              <label class="InvieFooter-form-label" for="hombre">
+                <input class="InvieFooter-form-input InvieFooter-form-input--radio" type="radio" id="hombre" name="sexo" value="hombre"> hombre
+              </label>
+            </div>
+            <div class="intereses">
+              <label class="InvieFooter-form-label" for="cotizacion">
+                <input class="InvieFooter-form-input InvieFooter-form-input--check" type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotización
+              </label>
+              <label class="InvieFooter-form-label" for="reclamos">
+                <input class="InvieFooter-form-input InvieFooter-form-input--check" type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+              </label>
+              <label class="InvieFooter-form-label" for="comentarios">
+                <input class="InvieFooter-form-input InvieFooter-form-input--check" type="checkbox" id="comentarios" name="intereses" value="comantarios"> Comentarios
+              </label>
+              <label class="InvieFooter-form-label" for="otros">
+                <input class="InvieFooter-form-input InvieFooter-form-input--check" type="checkbox" id="otros" name="intereses" value="otros"> Otros
+              </label>
+            </div>
+          </div>
+          <div class="InvieFooter-form-column">
+            <label class="InvieFooter-form-label" for="comentarios">Comentarios</label>
+            <textarea class="InvieFooter-form-input InvieFooter-form-input--textarea" name="comantarios" id="comentarios" cols="30" rows="7"></textarea>
+            <input class="InvieFooter-form-btn" type="submit" value="Enviar" class="button"/>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
+    <script>
+      var consulta = window.matchMedia('(max-width: 500px)');
+      consulta.addListener(mediaQuery);
+
+      var $burguerButton = document.getElementById('burguer-button');
+      var $menu = document.getElementById('menu');
+      function toggleMenu(){
+        $menu.classList.toggle('active')
+      };
+      function showMenu(){
+        $menu.classList.add('active');
+      };
+      function hideMenu(){
+        $menu.classList.remove('active');
+      };
+
+      function mediaQuery() {
+        if (consulta.matches) {
+          // si se cumple hagamos esto
+          console.log('se cumplió la condicion');
+          $burguerButton.addEventListener('touchstart', toggleMenu);
+        } else {
+          $burguerButton.removeEventListener('touchstart', toggleMenu);
+          // si no se cumple hagamos esto
+          console.log('no se cumplió la condicion');
+        }
+      }
+      mediaQuery();
+
+      // lazy loading
+      var bLazy = new Blazy({
+          selector: 'img'
+      });
+      // $burguerButton.addEventListener('touchstart', toggleMenu);
+
+      // function toggleMenu(){
+      //   $menu.classList.toggle('active')
+      // };
+
+      // Gestos touch
+      var $body = document.body;
+
+      var gestos = new Hammer($body);
+      gestos.on('swipeleft', hideMenu);
+      gestos.on('swiperight', showMenu);
+    </script>
+  </body>
+</html>

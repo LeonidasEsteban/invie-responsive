@@ -1,0 +1,119 @@
+@import './variables.css';
+@import './iconfonts.css';
+
+@lost flexbox flex;
+
+/* -- Mixins */
+@define-mixin btn $textColor, $bgColor, $bgColorStart, $bgColorEnd {
+  border-radius: 12px;
+  border: none;
+  color: $(textColor);
+  padding: 7px 12px;
+  cursor: pointer;
+  font-size: var(--fontSize);
+  text-decoration: none;
+  background: $(bgColor);
+  background: linear-gradient(to left, $(bgColorStart), $(bgColorEnd))
+}
+
+.u-scrollContainer {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: mandatory;
+  font-size: 0;
+
+  &-itemContainer {
+    border: 1px solid var(--border-feature);
+    border-radius: 12px;
+    width: 98%;
+    margin: 1%;
+    display: inline-block;
+    line-heigth: 18px;
+    font-size: 18px;
+  }
+
+  &-itemContent {
+    display: flex;
+
+    & > img {
+      width: auto;
+      height: 200px;
+    }
+  }
+}
+
+.u-Grid {
+  background: gray;
+  lost-center: 800px;
+  lost-utility: clearfix;
+
+  &-column {
+    background-color: blue;
+    lost-column: 1/5;
+
+    @media (--tablet) {
+      lost-column: 1/3;
+    }
+
+    @media (--mobile) {
+      lost-column: 1/1;
+    }
+  }
+}
+
+.u-wrapper {
+  max-width: 800px;
+  margin: auto;
+  postion: relative;
+}
+
+.InvieHero {
+  background: url('../images/background.png') var(--bg-header);
+  padding: 20px;
+  height: 500px;
+
+  @media (--retina) {
+    background-image: url('../images/background2x.png');
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    transition: all 0.3s ease-in;
+    &:hover {
+      filter: blur(4px);
+    }
+  }
+
+  &-copy {
+    &-title {
+      color: var(--bg-body);
+      font-size: responsive 32px 70px;
+
+      @media (--mobile) {
+        color: red;
+      }
+    }
+
+    &-btn {
+      @mixin btn var(--bg-body), var(--btn-gradient), var(--btn-gradient-start), var(--btn-gradient-end);
+    }
+  }
+}
+
+.InvieFooter {
+  background-color: var(--bg-footer);
+
+  &-form {
+    &-btn {
+      @mixin btn var(--bg-body), var(--btn-gradient), var(--btn-gradient-start), var(--btn-gradient-end);
+    }
+  }
+}
