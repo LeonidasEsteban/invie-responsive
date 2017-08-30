@@ -1,0 +1,18 @@
+:root {
+  --bg-body: #fafafa;
+  --bg-header: #466173;
+  --bg-footer: #273b47;
+  --border-feature: #1f313c;
+
+  --btn-gradient: #fd324e;
+  --btn-gradient-start: color(var(--btn-gradient) blackness(30%));
+  --btn-gradient-end: color(var(--btn-gradient) lightness(+10%) hue(10%));
+
+  --fontSize: 18px;
+}
+
+/* -- Custom Media queries */
+@custom-media --mobile (max-width: 500px);
+@custom-media --tablet (max-width: 650px);
+@custom-media --desktop (max-width: 800px);
+@custom-media --retina (-webkit-min-device-pixel-ratio: 2);
